@@ -25,10 +25,13 @@ docker-wasm-example/
 ### 1. Enable WASM Support in Docker Desktop
 
 1. Open Docker Desktop
-2. Navigate to **Settings**
-3. Go to **Features in development**
-4. Check "Enable Wasm"
-5. Click **Apply & restart**
+2. Navigate to **Settings** (gear icon)
+3. In the **General** tab, ensure "Use containerd for pulling and storing images" is enabled
+4. Go to **Features in development**
+5. Check "Enable Wasm"
+6. Click **Apply & restart**
+7. In the confirmation dialog, click **Install** to install the WASM runtimes
+8. Wait for Docker Desktop to restart
 
 ### 2. Create Project Files
 
