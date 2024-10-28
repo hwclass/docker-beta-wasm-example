@@ -27,8 +27,14 @@ docker-wasm-example/
 1. Open Docker Desktop
 2. Navigate to **Settings** (gear icon)
 3. In the **General** tab, ensure "Use containerd for pulling and storing images" is enabled
+
+![Screenshot 2024-10-28 at 21 35 38](https://github.com/user-attachments/assets/05422d62-936e-413f-8d7f-66c080c3f140)
+
 4. Go to **Features in development**
 5. Check "Enable Wasm"
+
+![Screenshot 2024-10-28 at 21 34 39](https://github.com/user-attachments/assets/0cd099d4-d621-44b1-82e8-38f50eb21247)
+
 6. Click **Apply & restart**
 7. In the confirmation dialog, click **Install** to install the WASM runtimes
 8. Wait for Docker Desktop to restart
@@ -160,7 +166,7 @@ docker run --runtime=io.containerd.spin.v2 --platform=wasi/wasm32 wasm-example
 docker run --runtime=io.containerd.lunatic.v1 --platform=wasi/wasm32 wasm-example
 ```
 
-**WWS (Wasm Worker System)**
+**WWS (Wasm Workers Server)**
 
 ```sh
 docker run --runtime=io.containerd.wws.v1 --platform=wasi/wasm32 wasm-example
